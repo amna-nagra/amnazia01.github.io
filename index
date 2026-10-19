@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amna Zia | Backend Developer & Cybersecurity Analyst</title>
+<meta name="description" content="Amna Zia is a backend developer and cybersecurity analyst building secure NestJS and Node.js APIs with AI features.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f1f5f8; --surface:#ffffff; --ink:#12263a; --muted:#52667a;
+  --line:#d3dde6; --accent:#1b5fd6; --accent-ink:#ffffff; --code-bg:#12263a; --code-ink:#dbe7f3; --code-key:#7fb2ff; --code-str:#8fe0b0;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0e1a26; --surface:#14253599; --ink:#e6eef6; --muted:#9fb2c4; --line:#27405a; --accent:#6aa3ff; --accent-ink:#0e1a26; --code-bg:#081018;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;flex-wrap:wrap;gap:.75rem}
+.brand{font-weight:800;font-size:1.15rem;text-decoration:none;color:var(--ink)}
+nav a{margin-left:1.25rem;color:var(--muted);text-decoration:none;font-weight:600}
+nav a:hover{color:var(--accent)}
+
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:2.5rem;align-items:center;padding:3rem 0 4rem}
+h1{font-size:clamp(2.4rem,6vw,4.1rem);line-height:1.04;margin:0 0 1rem;font-weight:800;letter-spacing:-.02em}
+.lead{color:var(--muted);max-width:34rem;margin:0 0 1.75rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.75rem 1.3rem;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+
+.resp{background:var(--code-bg);color:var(--code-ink);border-radius:12px;font:400 .9rem/1.7 "JetBrains Mono",ui-monospace,Consolas,monospace;overflow:hidden;box-shadow:0 18px 40px -20px rgba(18,38,58,.55)}
+.resp .bar{display:flex;justify-content:space-between;padding:.6rem 1rem;background:rgba(255,255,255,.07);font-size:.8rem}
+.resp .ok{color:var(--code-str)}
+.resp pre{margin:0;padding:1rem 1.1rem 1.2rem;overflow-x:auto;white-space:pre}
+.k{color:var(--code-key)}.s{color:var(--code-str)}
+
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.9rem;margin:0 0 1.5rem;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.3rem}
+.box h3{margin:0 0 .6rem;font-size:1.1rem}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;margin:0;padding:0;list-style:none}
+.tags li{border:1px solid var(--line);border-radius:6px;padding:.15rem .6rem;font-size:.92rem;color:var(--muted)}
+
+.job{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job .when{color:var(--muted);font-size:.95rem}
+.job h3{margin:0 0 .15rem;font-size:1.2rem}
+.job .org{color:var(--accent);font-weight:600;margin:0 0 .6rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin-bottom:.35rem}
+
+.project{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:10px;padding:1.6rem}
+.project h3{margin:0 0 .3rem;font-size:1.35rem}
+.project .sub{color:var(--muted);margin:0 0 1rem}
+.project ul{padding-left:1.1rem;margin:0 0 1rem}
+
+.contact a.big{display:inline-block;font-size:clamp(1.3rem,3.5vw,2rem);font-weight:800;word-break:break-all;margin-bottom:1.25rem}
+.contact ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;padding-top:1.5rem}
+  .job{grid-template-columns:1fr;gap:.4rem}
+  nav a{margin:0 1rem 0 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top">Amna Zia</a>
+    <nav aria-label="Main">
+      <a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <h1>I build backends and break them before attackers do.</h1>
+        <p class="lead">I'm Amna, a backend developer and cybersecurity analyst. I build REST APIs with Node.js and NestJS, add AI features such as vector search, and test systems for weaknesses through penetration testing and vulnerability assessments.</p>
+        <div class="btns">
+          <a class="btn primary" href="#contact">Hire me</a>
+          <a class="btn ghost" href="#projects">See my project</a>
+        </div>
+      </div>
+      <div class="resp" role="img" aria-label="Profile summary shown as a JSON API response">
+        <div class="bar"><span>GET /amna</span><span class="ok">200 OK</span></div>
+<pre>{
+  <span class="k">"role"</span>: <span class="s">"Backend Developer"</span>,
+  <span class="k">"also"</span>: <span class="s">"Cybersecurity Analyst"</span>,
+  <span class="k">"stack"</span>: [<span class="s">"NestJS"</span>, <span class="s">"Node.js"</span>,
+            <span class="s">"MongoDB"</span>, <span class="s">"React"</span>],
+  <span class="k">"ai"</span>: <span class="s">"vector embeddings"</span>,
+  <span class="k">"security"</span>: [<span class="s">"VAPT"</span>, <span class="s">"forensics"</span>],
+  <span class="k">"degree"</span>: <span class="s">"BS Computer Science"</span>,
+  <span class="k">"location"</span>: <span class="s">"Islamabad, PK"</span>,
+  <span class="k">"available"</span>: true
+}</pre>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p style="max-width:44rem;margin:0">I'm a Computer Science graduate from Capital University of Science and Technology (2022 to 2026). I have worked on production backend services as an intern at Citrusbits, built AI-driven features with vector embeddings, and practised ethical hacking and digital forensics as a cybersecurity analyst. I like systems that are secure, reliable and smart.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="box"><h3>Backend and AI</h3>
+          <ul class="tags"><li>Node.js</li><li>NestJS</li><li>React.js</li><li>REST APIs</li><li>MongoDB</li><li>AI / Vector Embeddings</li></ul></div>
+        <div class="box"><h3>Cybersecurity</h3>
+          <ul class="tags"><li>Vulnerability Assessment</li><li>Penetration Testing</li><li>Network Security</li><li>Digital Forensics</li></ul></div>
+        <div class="box"><h3>Security tools</h3>
+          <ul class="tags"><li>Kali Linux</li><li>Wireshark</li><li>Metasploit</li><li>Burp Suite</li><li>Nmap</li><li>Nessus</li><li>Splunk</li><li>Wazuh</li><li>MobSF</li><li>Autopsy</li><li>Bettercap</li><li>BeEF</li></ul></div>
+        <div class="box"><h3>SEO and web</h3>
+          <ul class="tags"><li>On-Page SEO</li><li>Technical SEO</li><li>Mobile Optimization</li><li>Page Speed</li></ul></div>
+        <div class="box"><h3>Tools</h3>
+          <ul class="tags"><li>Git</li><li>GitHub</li><li>Linux (Kali, Ubuntu)</li><li>Windows</li></ul></div>
+        <div class="box"><h3>Certifications</h3>
+          <ul class="tags"><li>Blue Team Level 1 Fundamentals (Coursera, 2024)</li><li>SEO Fundamentals, SEMrush (Coursera, 2024)</li></ul></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="when">2025<br>Islamabad</div>
+        <div><h3>Backend Developer Intern</h3><p class="org">Citrusbits</p>
+          <ul>
+            <li>Built and maintained scalable REST APIs with NestJS and Node.js for production applications.</li>
+            <li>Used React.js to integrate and test backend features end to end.</li>
+            <li>Added AI-powered search and matching with vector embeddings.</li>
+            <li>Worked with cross-functional teams in an agile environment.</li>
+          </ul></div>
+      </div>
+      <div class="job">
+        <div class="when">July 2025<br>Islamabad</div>
+        <div><h3>Cybersecurity Specialist | Analyst</h3><p class="org">CUST</p>
+          <ul>
+            <li>Secured networks, systems and applications through ethical hacking and penetration testing.</li>
+            <li>Investigated security incidents using cryptography and digital forensics.</li>
+            <li>Evaluated security risks and applied tools to strengthen data protection.</li>
+          </ul></div>
+      </div>
+      <div class="job">
+        <div class="when">Jun to Aug 2024<br>Rawalpindi</div>
+        <div><h3>Web Development and SEO Intern</h3><p class="org">Code Age</p>
+          <ul>
+            <li>Worked on frontend development and on-page, off-page and technical SEO.</li>
+            <li>Helped improve website visibility and search rankings.</li>
+          </ul></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="project">
+        <h3>AI-Powered Interview Preparation and Hiring Platform</h3>
+        <p class="sub">Final year project: an anti-cheating AI interview and hiring system</p>
+        <ul>
+          <li>Helps candidates prepare for interviews and helps recruiters hire faster.</li>
+          <li>Detects suspicious behaviour during mock interviews to keep them honest.</li>
+          <li>Uses vector embeddings for question generation, answer evaluation and candidate-job matching.</li>
+          <li>Full-stack architecture focused on scalability, security and a smooth user experience.</li>
+        </ul>
+        <ul class="tags"><li>AI</li><li>Vector Embeddings</li><li>Node.js</li><li>React.js</li><li>Security</li></ul>
+        <!-- Add a link here: <p><a href="https://github.com/YOUR-USERNAME/YOUR-REPO">View on GitHub</a></p> -->
+      </article>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <a class="big" href="mailto:amnazia540@gmail.com">amnazia540@gmail.com</a>
+      <ul>
+        <li>Phone: <a href="tel:+923485296841">0348 5296841</a></li>
+        <li>WhatsApp: <a href="https://wa.me/923485296841">Message me</a></li>
+        <li>Location: Islamabad, Pakistan</li>
+        <!-- <li>GitHub: <a href="https://github.com/YOUR-USERNAME">github.com/YOUR-USERNAME</a></li> -->
+        <!-- <li>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-PROFILE">linkedin.com/in/YOUR-PROFILE</a></li> -->
+        <!-- <li>Fiverr: <a href="https://www.fiverr.com/YOUR-USERNAME">fiverr.com/YOUR-USERNAME</a></li> -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Amna Zia</footer>
+</div>
+</body>
+</html>
